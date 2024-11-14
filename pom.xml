@@ -15,6 +15,10 @@
         <surefireVersion>3.5.1</surefireVersion>
         <xtentVersion>5.1.2</xtentVersion>
         <seleniumVersion>4.25.0</seleniumVersion>
+        <restAssuredVersion>5.5.0</restAssuredVersion>
+        <hamcrestVersion>3.0</hamcrestVersion>
+        <jsonVersion>20240303</jsonVersion>
+        <gsonVersion>2.9.0</gsonVersion>
         <suiteFile>testSuites\runSuites.xml</suiteFile>
     </properties>
 
@@ -57,6 +61,31 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${seleniumVersion}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restAssuredVersion}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>${hamcrestVersion}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${jsonVersion}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gsonVersion}</version>
         </dependency>
 
 
